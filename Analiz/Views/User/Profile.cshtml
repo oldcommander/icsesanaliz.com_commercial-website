@@ -1,0 +1,322 @@
+﻿@model Kullanici
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F993725ENR"></script>
+    <script>
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F993725ENR');</script>
+    <meta name="keywords" content="Fal, Falcı, Analiz, İçses, İçsesAnaliz,içsesanaliz,içsesanaliz.com,www.içsesanaliz.com,icsesanaliz.com,iç ses analiz,İç Ses Analiz,icses analiz, içsesanaliz, İçsesanaliz,burçların özellikleri,blog,blog yazıları,günlük analiz, burç, burçlar, büyü, kişilik, rüya, yorum, fıkra, günlük, komedi, aşk, aşk analizi, finans analizi, günlük analiz, günlük analiz yaptırmak istiyorum.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kullanıcı Profili</title>
+    <link rel="icon" href="~/images/logoico.ico" type="image/x-icon">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="@Url.Action("Index","User")" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">İçses</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>İçsesAnaliz</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="~/images/usericonSon.png" class="user-image" alt="User Image">
+                                <span class="hidden-xs">@Model.Adi @Model.Soyadi </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="~/images/usericonSon.png" class="img-circle" alt="User Image">
+                                    <p>
+                                        @Model.Adi @Model.Soyadi - Kullanıcı
+                                        <small> @Model.Email</small>
+                                </li>
+                                <!-- Menu Body -->
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="@Url.Action("Profile","User")" class="btn btn-default btn-flat">Profil</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="@Url.Action("Exit","User")" class="btn btn-default btn-flat">Çıkış Yap</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="~/images/usericonSon.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>@Model.Adi @Model.Soyadi</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Çevrimiçi</a>
+                    </div>
+                </div>
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Bir şeyler arayın...">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MENÜ</li>
+                    <li class="mdi-view-column">
+                        <a href="@Url.Action("Index","User")">
+                            <i class="fa fa-dashboard"></i> <span>Analiz</span>
+                        </a>
+                    </li>
+                    <li class="active mdi-view-column">
+                        <a href="@Url.Action("Profile","User")">
+                            <i class="fa fa-user-plus"></i> <span>Profil</span>
+                        </a>
+                    </li>
+                    <li class="mdi-view-column">
+                        <a href="@Url.Action("Contact","User")">
+                            <i class="fa fa-volume-control-phone"></i> <span>İletişim</span>
+                        </a>
+                    </li>
+                    <li class="mdi-view-column">
+                        <a href="@Url.Action("BlogList","Home")">
+                            <i class="fa fa-pencil-square-o"></i> <span>Blog Yazıları</span>
+                        </a>
+                    </li>
+                    <li class="mdi-view-column">
+                        <a href="@Url.Action("Index","Home")">
+                            <i class="fa fa-home"></i> <span>Ana Sayfa</span>
+                        </a>
+                    </li>
+                    <li class="mdi-view-column">
+                        <a class="btn-danger" href="@Url.Action("Exit","User")">
+                            <i class="fa fa-times"></i>
+                            <span style="color:white;">Çıkış</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    Kullanıcı Profili
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                    <li class="active">Kullanıcı Profili</li>
+                </ol>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- Profile Image -->
+                        <div class="box box-primary">
+                            <div class="box-body box-profile">
+                                <img class="profile-user-img img-responsive img-circle" src="~/images/usericonSon.png" alt="User profile picture">
+                                <h3 class="profile-username text-center">@Model.Adi @Model.Soyadi</h3>
+                                <h5 class="profile-modern text-center">@Model.Email</h5>
+                                <p class="text-muted text-center">Kullanıcı</p>
+
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                        <!-- About Me Box -->
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-9">
+                        <div class="nav-tabs-custom">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#settings" data-toggle="tab">Profil Bilgileri</a></li>
+                            </ul>
+                            <!-- /.tab-pane -->
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="settings">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Ad</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Adi" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Soyad</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Soyadi" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputName" value="@Model.Email" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Parola</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Parola" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Doğum Tarihi</label>
+                                        <div class="col-sm-10">
+                                            <input type="datetime" class="form-control" id="inputName" value="@Model.DogumTarihi" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Burç</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Burc" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Cinsiyet</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Cinsiyet" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Hobi</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Hobi" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Beğenilen Müzik Türü</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Muzik" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Eğitim Durumu</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.Egitim" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Reklam İzleme Tarihi</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" value="@Model.OldAdsWatch" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Son Analiz Tarihi</label>
+                                        <div class="col-sm-10">
+                                            <input type="datetime" class="form-control" id="inputName" value="@Model.OldLoginDate" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="margin-left:17%; color:red;" class="col-sm-8">Sitemize üye olurken kullandığınız bilgiler koşullarımız gereği güncelleme işlemine kapalıdır.</label>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /.tab-pane -->
+                            <!-- /.tab-content -->
+                        </div>
+                        <!-- /.nav-tabs-custom -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <div style="display:block; text-align:center">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1266803097331707"
+                    crossorigin="anonymous"></script>
+            <!-- Analiz genel -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1266803097331707"
+                 data-ad-slot="7293380129"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.4.1
+            </div>
+            <strong>Copyright &copy; 2022 İçsesAnaliz.</strong> Tüm Hakları Saklıdır.
+        </footer>
+        <!-- Control Sidebar -->
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+    immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery 3 -->
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+</body>
+</html>

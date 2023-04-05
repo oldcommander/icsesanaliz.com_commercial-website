@@ -1,0 +1,71 @@
+﻿@model EmailCustom
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F993725ENR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F993725ENR');
+    </script>
+    <meta charset="utf-8">
+    <title>Email Doğrulama</title>
+    <link rel="icon" href="~/images/logoico.ico" type="image/x-icon">
+    <meta name="keywords" content="Fal, Falcı, Analiz, İçses, İçsesAnaliz,içsesanaliz,içsesanaliz.com,www.içsesanaliz.com,icsesanaliz.com,iç ses analiz,İç Ses Analiz,icses analiz, içsesanaliz, İçsesanaliz,burçların özellikleri,blog,blog yazıları,günlük analiz, burç, burçlar, büyü, kişilik, rüya, yorum, fıkra, günlük, komedi, aşk, aşk analizi, finans analizi, günlük analiz, günlük analiz yaptırmak istiyorum.">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="~/css/opensans-font.css">
+    <link rel="stylesheet" type="text/css" href="~/fonts/line-awesome/css/line-awesome.min.css">
+    <!-- Jquery -->
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="~/css/stylesign.css" />
+</head>
+<body class="form-v4">
+    <div style="margin-top:8%;" class="page-content">
+        <div style="margin-top:2%;" class="form-v4-content">
+            <div class="form-left">
+                <h2>İçses Analiz</h2>
+                <p class="text-1">
+                    Değerli kullanıcımız, hizmetlerimizden yararlanmak için sistemimize üye olduğunuz email adresinizi doğrulamanız gerekmektedir.
+                    Lütfen email adresinize göndermiş olduğumuz doğrulama kodunu yandaki alana giriniz ve email adresinizi doğrulayınız. Doğrulama kodunun email adresinize ulaşmasını bekleyiniz. <a href="mailto://info@iceseanaliz.com"> Yardım için tıklayınız.</a>
+                </p>
+            </div>
+            <form asp-action="Email2" method="post" class="form-detail">
+                <h2>Email Doğrulama Sayfası</h2>
+
+                <div style="margin-top:15%;" class="form-row">
+                    <label asp-for="Code" for="first_name">Doğrulama Kodunuzu Giriniz</label>
+                    <input asp-for="Code" type="text" id="first_name" class="input-text" required>
+                </div>
+
+
+                <div class="form-row-last">
+                    <input type="submit" name="register" class="register" value="Doğrula" />
+
+                </div>
+                <div class="form-row">
+                    <p style="color:red; margin-left:auto; margin-right:auto; margin-bottom:0px; margin-top:0px; ">@ViewBag.EmailError</p>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1266803097331707"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src=~/js/validator.js></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+

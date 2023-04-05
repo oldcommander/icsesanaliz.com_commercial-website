@@ -1,0 +1,114 @@
+﻿@model Admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F993725ENR"></script>
+    <script>
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F993725ENR');</script>
+    <title>Giriş</title>
+    <link rel="icon" href="~/images/logoico.ico" type="image/x-icon">
+    <meta name="keywords" content="Fal, Falcı, Analiz, İçses, İçsesAnaliz,içsesanaliz,içsesanaliz.com,www.içsesanaliz.com,icsesanaliz.com,iç ses analiz,İç Ses Analiz,icses analiz, içsesanaliz, İçsesanaliz,burçların özellikleri,blog,blog yazıları,günlük analiz, burç, burçlar, büyü, kişilik, rüya, yorum, fıkra, günlük, komedi, aşk, aşk analizi, finans analizi, günlük analiz, günlük analiz yaptırmak istiyorum.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/css/main.css">
+
+    <!--===============================================================================================-->
+</head>
+<body>
+    <img style=" display: block; margin-left: auto; margin-right: auto; width: 250px;" src="~/images/logoSon3.jpeg" />
+    <div class="limiter">
+
+        <div class="container-login100">
+
+            <div class="wrap-login100 p-t-30 p-b-50">
+
+                <span class="login100-form-title p-b-41">
+                    ADMİN GİRİŞ SAYFASI
+                </span>
+                <form method="post" asp-action="Login" class="login100-form validate-form p-b-33 p-t-5">
+
+                    <div class="wrap-input100 validate-input" data-validate="Email Adresinizi Giriniz">
+                        <input asp-for="Email" class="input100" type="email" placeholder="Email" required />
+                        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Parolanızı Giriniz">
+                        <input asp-for="Parola" class="input100" type="password" placeholder="Parola" required />
+                        <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn m-t-32">
+                        <button type="submit" class="login100-form-btn">
+                            Giriş
+                        </button>
+                    </div>
+                    <p style="color:red; padding-top:5px; padding-left:100px;">@ViewBag.Error</p>
+                    <!----<input type="button" class="admin" value="Yönetici Girişi" style="padding-left:280px; padding-top:15px; color:palevioletred; cursor:pointer"; />-->
+
+                </form>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1266803097331707"
+                        crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-1266803097331707"
+                     data-ad-slot="1274766689"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/js/main.js"></script>
+    <script src="~/js/script.js"></script>
+
+
+</body>
+

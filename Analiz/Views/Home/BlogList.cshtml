@@ -1,0 +1,174 @@
+﻿@model IEnumerable<MainBlog>
+<!doctype html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F993725ENR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F993725ENR');
+
+
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="~/images/logoico.ico" type="image/x-icon">
+    <meta name="description" content="Sitemize ücretsiz üye olarak kişilik, doğum tarihi, aşk ve günlük analizlerinizi yaptırabilirsiniz. Sizin için tecrübeli ekibimizle bilgierinzden yola çıkarak ücretsiz analiz yapıyoruz. Aklınızdaki kişi ile aranızdaki ilişki hakkında, doğum tarihinizden yola çıkarak kişiliğiniz hakkında, burcunuz ile alakalı özellikler ile yaşam tarzınız hakkında, eğitim durumunuz ve hobilerinizi ele alarak günlük analizlere kolayca ulaşmak ister misiniz? Günümüzde çokça yaygın kullanılan astrolojik veriler ile sizinde hayatınıza katacağınız sonsuz analizler bulunmaktadır. Yapay zekamız özenle hakkınızdaki analizleri hazırlamaktadır. Hayatınıza profesyonel dokuşlara hazır olun. İleriye dönük fikirlerinizi bizden analiz yapmayana kadar hayata geçirmeyin. Sitemizi kullanıcı dostu arayüz, sürekli ve güncel blog yazıları, verilerin güvenliği, kolay erişim ve kullanıcı dostu ilkeler ile sizin için hizmete sunduk. Analizler yaparken kendinizi güvende hissedin. Bugün Türkiye'nin birçok yerinden müşteri kitlesi ile büyük bir aile olduk. Hedefimiz kaliteli hizmet sunarak siz kullanıcılarımızın analizlerini gerçekleştirmek. Sizde aramıza katılın ve değerli ailemizin bir parçası olun. Geçmişe dokunamayız ama geleceği değiştirmek bizim elimizde. Değişmenin en temel kuralı bugünden başlamaktır. Sende bugünden başlayıp geleceğine yön verebilirsin." />
+    <meta name="keywords" content="Fal, Falcı, Analiz, İçses, İçsesAnaliz,içsesanaliz,içsesanaliz.com,www.içsesanaliz.com,icsesanaliz.com,iç ses analiz,İç Ses Analiz,icses analiz, içsesanaliz, İçsesanaliz,burçların özellikleri,blog,blog yazıları,günlük analiz, burç, burçlar, büyü, kişilik, rüya, yorum, fıkra, günlük, komedi, aşk, aşk analizi, finans analizi, günlük analiz, günlük analiz yaptırmak istiyorum.">
+    <link rel="stylesheet" href="~/blog/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/blog/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/blog/css/tiny-slider.css">
+    <link rel="stylesheet" href="~/blog/css/glightbox.min.css">
+    <link rel="stylesheet" href="~/blog/css/aos.css">
+    <link rel="stylesheet" href="~/blog/css/style.css">
+    <title> Blog Yazıları</title>
+
+</head>
+<body>
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <div class="row">
+                    <div class="col-md-6 text-left order-1 order-md-2 mb-3 mb-md-0">
+                        <a href="@Url.Action("Index","Home")" class="logo m-0"><img alt="logo" src="~/images/logoSon3.jpeg" width="230" height="90" /></a>
+                    </div>
+                    <div class="col-md-6 text-right order-2 order-md-3 mb-3 mb-md-3">
+                        <div class="d-flex">
+
+                            <a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block" data-toggle="collapse" data-target="#main-navbar">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="js-clone-nav d-none d-lg-inline-none text-start site-menu float-end">
+                    <li><a href="@Url.Action("Index","Home")">Ana Sayfa</a></li>
+                    <li>
+                        <a href="@Url.Action("About","Home")">Hakkımızda</a>
+                    </li>
+                    <li><a href="@Url.Action("Index","User")">Analiz Yap</a></li>
+                    <li><a href="@Url.Action("SıngUp","Home")">Üye Ol</a></li>
+                    <li class="active"><a href="@Url.Action("BlogList","Home")">Blog Köşesi</a></li>
+                    <li><a href="@Url.Action("Help","Home")">Yardım</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center mb-2">
+            <div class="col-lg-12 text-center">
+                <h2 class="heading">Blog Köşesi</h2>
+            </div>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1266803097331707"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-1266803097331707"
+             data-ad-slot="1274766689"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <div class="row g-5">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4">
+                    <div class="post-entry d-block small-post-entry-v">
+                        <div class="thumbnail">
+                            <img src="~/upload/img/@item.Gorsel" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="content">
+                            <div class="post-meta mb-1">
+                                <a href="#" class="category">@item.Baslik</a>
+                                <span class="date">
+                                    @item.Tarih.Day-@item.Tarih.Month-@item.Tarih.Year
+                                </span>
+                            </div>
+                            <h3 class="heading mb-3">@item.Kategori</h3>
+                            <div class="post-author d-flex align-items-center">
+                                <div class="author-pic">
+                                    <img src="~/images/usericonSon.png" alt="Image">
+                                </div>
+                                <div class="text">
+                                    <strong>Yazar: @item.Yazar</strong>
+
+                                </div>
+                            </div>
+                            <div class="post-author d-flex align-items-center">
+                                <div class="text">
+                                    <br />
+                                    Etiketler: <strong> @item.Etiket</strong><br />
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <form asp-action="BlogShow" method="post">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <button type="submit" style=" background-color:orangered; color:white; border:groove; border-color:orangered; border-radius:8px; font-size:17px; cursor:pointer;">Devamını Oku</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1266803097331707"
+            crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-1266803097331707"
+         data-ad-slot="1274766689"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row justify-content-center copyright">
+                <div class="col-lg-7 text-center">
+                    <div class="widget">
+                        <ul class="social list-unstyled">
+                            <li><a href="https://instagram.com/icsesanaliz.co"><span class="icon-instagram"></span></a></li>
+                            <li><a href="#"><span>TikTok</span></a></li>
+                            <li><a href="mailto:info@icsesanaliz.com"><span>Mail</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <p>
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır. | Design <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://icsesanaliz.com" target="_blank" rel="nofollow noopener">İçses Analiz</a>
+                        </p>
+                        <div class="d-block">
+                            <a target="_blank" href="@Url.Action("Koşullar","Home")" class="m-2">Kullanım Koşulları &amp; Politikalarımız</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/blog/js/bootstrap.bundle.min.js"></script>
+    <script src="~/blog/js/tiny-slider.js"></script>
+    <script src="~/blog/js/glightbox.min.js"></script>
+    <script src="~/blog/js/aos.js"></script>
+    <script src="~/blog/js/navbar.js"></script>
+    <script src="~/blog/js/counter.js"></script>
+    <script src="~/blog/js/custom.js"></script>
+
+</body>
+</html>
